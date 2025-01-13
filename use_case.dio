@@ -1,0 +1,64 @@
+<mxfile host="65bd71144e">
+    <diagram id="NdAwrjkpHtVKGvw0Lvkc" name="Page-1">
+        <mxGraphModel dx="1253" dy="704" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Visiteur" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="70" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Etudiant" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="210" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Enseignant" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="320" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Administrateur" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="470" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="60" width="730" height="1690" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Creéation d'un compte" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry x="60" y="50" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="visualisation du catalogue" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry x="60" y="130" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Recherche et consultation du details des cours" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry x="90" y="230" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Inscription à un cours après authentication" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry x="80" y="330" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Accès à une section &quot;Mes cours&quot;&amp;nbsp; regroupants les cours rejoints.&lt;br&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry x="90" y="440" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Accès à une section &quot;Mes cours&quot;&amp;nbsp; regroupants les cours rejoints.&lt;br&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry x="90" y="510" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Ajout de nouveaux cours" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry x="90" y="620" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Gestion des cours." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry x="90" y="720" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Accès à une question statistiques sur les cours." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry x="90" y="790" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Accès à une question &quot;Statistiques&quot; sur les cours." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry x="80" y="900" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Validation des comptes enseingnats" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry x="70" y="1000" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Gestion des utilisateurs." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry x="70" y="1070" width="310" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="Validation des comptes enseingnats" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry x="80" y="1170" width="310" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
