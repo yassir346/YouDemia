@@ -1,12 +1,15 @@
 <?php
 
+include 'Cour.php';
+include 'Role.php';
+
 class Utilisateur{
-    private $id;
-    private $nom;
-    private $prenom;
-    private $email;
-    private $password;
-    private $phone;
+    private int $id;
+    private string $nom;
+    private string $prenom;
+    private string $email;
+    private string $password;
+    private string $phone;
     private $cours = [];
     private Role $role;
     
@@ -38,7 +41,7 @@ class Utilisateur{
     }
 
     public function setCours(array $cours){
-        $this->cours = new Cours();
+        $this->cours = $cours;
     }
 
     public function setRole($role){

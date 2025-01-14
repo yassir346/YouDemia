@@ -49,5 +49,8 @@ class Etiquette{
         $this->logo = $logo;
     }
 
-
+    public function __toString()
+    {
+        return "Id: " . $this->id . "Nom: " . $this->nom . "Description: " . $this->description . "Logo: " . $this->logo . " ";
+    }
 }
