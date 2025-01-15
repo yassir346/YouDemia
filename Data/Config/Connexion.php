@@ -1,13 +1,13 @@
 <?php
 
-    class Database
+    class Connexion
     {
         private $host = 'localhost';
         private $user = 'root';
         private $password = '';
-        private $database = 'youdemy';
+        private $database = 'youdemia';
 
-        public function connect()
+        public function connexion()
         {
             try
             {
@@ -21,7 +21,7 @@
         }
     }
 
-    $connexion = new Database();
-    $connexion->connect();
+    $connexion = new Connexion();
+    $connexion->connexion();
 
 ?>

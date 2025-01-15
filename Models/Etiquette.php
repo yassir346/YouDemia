@@ -1,7 +1,7 @@
 <?php
 
 
-class Etiquette{
+abstract class Etiquette{
     protected $id;
     protected $nom;
     protected $description;
