@@ -1,13 +1,13 @@
 <?php
 include 'Etiquette.php';
 
-class Categories extends Etiquette{
+class Tag extends Etiquette{
     
     public function __construct(){}
 
     public function __call($name, $arguments)
     {
-        if($name == "creeCategorie")
+        if($name == "creeTag")
         {
             if(count($arguments) == 1)
             {
@@ -37,13 +37,8 @@ class Categories extends Etiquette{
         }
     }
 
-    public function __tostring()
+    public function toString()
     {
-        return parent::__tostring();
+        return parent::toString();
     }
 }
-
-//     $categorie = new Categorie();
-//     $categorie->creeCategorie(1, "this is categorie", "description", "categorie logo");
-//    echo $categorie->__tostring();
-?>

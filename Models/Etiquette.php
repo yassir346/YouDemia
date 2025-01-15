@@ -2,10 +2,10 @@
 
 
 class Etiquette{
-    private $id;
-    private $nom;
-    private $description;
-    private $logo;
+    protected $id;
+    protected $nom;
+    protected $description;
+    protected $logo;
 
     public function __construct(){}
 

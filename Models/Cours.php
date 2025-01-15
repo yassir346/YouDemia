@@ -5,7 +5,7 @@ include 'Categories.php';
 include 'Enseignant.php';
 include 'Etudiant.php';
 
-class Cour{
+class Cours{
     private int $id;
     private string $titre;
     private string $description;
@@ -13,6 +13,36 @@ class Cour{
     private Categories $categorie;
     private Enseignant $enseignant;
     private $Etudiant = [];
+
+    public function __construct(){}
+
+    public function __call($name, $arguments) {
+        if($name == "creeCours"){
+            if(count($arguments) == 2){
+                $this->titre = $arguments[0];
+                $this->description = $arguments[1];
+            } 
+            if(count($arguments) == 3){
+                $this->id = $arguments[0];
+
+                $this->titre = $arguments[1];
+                $this->description = $arguments[2];
+            } 
+            if(count($arguments) == 8){
+        $this->id = $arguments[0];
+        $this->titre = $arguments[1];
+        $this->description =$arguments[2];
+        $this->contenue =$arguments[3];
+        $this->categorie =$arguments[4];
+
+        $this->etudiants = $arguments[5];
+
+        $this->tags = $arguments[6];
+
+        $this->photo = $arguments[7];
+                 } 
+        }
+    }
 
     public function getId(){
         return $this->id;

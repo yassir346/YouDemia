@@ -1,6 +1,6 @@
 <?php
 
-include 'Cour.php';
+include 'Cours.php';
 include 'Role.php';
 
 class Utilisateur{
