@@ -11,35 +11,51 @@
             $this->connexion = new Connexion();
         }
 
-        public function Create($tableName, $names
-        )
+        // la fonction de la creation
+        public function Create($tableName, $names)
         {
             $columns = implode(',',array_keys($names));
             $values = implode(',',array_values($names));
-            var_dump($values);
-            // if (gettype($values) == string ){
-            //     $values = "'" . $values . "'";
-            // }
             $query = "INSERT INTO " . $tableName . "(" . $columns . ")" . "VALUES(" . $values . ")";
-            var_dump($query);
+            
+            $stmt = $this->connexion->connexion()->prepare($query);
+            $stmt->execute();
         }
 
-        public function Addcolontokeys($array)
+        // les fonctions de l'affichage
+        public function FindAll($tableName, $finder)
         {
-            $newarray = [];
-            foreach($array as $key => $value)
-            {
-                $newarray[] = ':'.$key;
+            $query = "SELECT * FROM " . $tableName ;
+            $stmt = $this->connexion->connexion()->prepare($query);
+            $stmt->execute();
+            $row = $stmt->fetchAll();
 
-            }
-            $nexarray =  implode(',',$newarray);
-            return $nexarray;
+            foreach($row as $value)
+            {
+                echo('<div style= "font-family: monospace" >' . $value[$finder] . '</div>' . '<br>');
+            } 
+
         }
+
+        public function DeleteWithId($tableName, $id)
+        {
+            $query = "DELETE FROM " . $tableName . " WHERE id = " . $id;
+            $stmt = $this->connexion->connexion()->prepare($query);
+            $stmt->execute();
+            // var_dump($stmt);
+        }
+
+        
     }
 
-    $nn = new CrudModels();
-    $tableName = 'Utilisateur';
-    $names = ['id' => 1, 'FirstName' => 'Dino', 'LastName' => 'Crafting'];
-    $nn->Create($tableName, $names);
+
+
+
+
+
+    // $nn = new CrudModels();
+    // $tableName = 'roles';
+    // // // $names = ['nom' => "'Admin'", 'description' => "'This is admin'"];
+    // $nn->FindAll($tableName);
 
 ?>
