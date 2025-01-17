@@ -25,7 +25,7 @@
         // les fonctions de l'affichage
         public function FindAll($tableName, $finder)
         {
-            $query = "SELECT * FROM " . $tableName ;
+            $query = "SELECT * FROM " . $tableName;
             $stmt = $this->connexion->connexion()->prepare($query);
             $stmt->execute();
             $row = $stmt->fetchAll();
@@ -33,7 +33,7 @@
             foreach($row as $value)
             {
                 echo('<div style= "font-family: monospace" >' . $value[$finder] . '</div>' . '<br>');
-            } 
+            }
 
         }
 
