@@ -73,30 +73,30 @@
                 $role = $_POST['role'];
 
                 if($role == 'Admin'){
-                    $role = 17;
+                    $role = 1;
                 }
     
                 if($role == 'Etudiant'){
-                    $role = 18;
+                    $role = 2;
                 }
     
                 if($role == 'Enseignant'){
-                    $role = 19;
+                    $role = 3;
                 } 
 
                 $names = ["nom" => "'$nom'", "prenom" => "'$prenom'", "email" => "'$email'", "phone" => "'$phone'" , "role_id" => "'$role'"];
-                $usercontroll->CreeUtilisateur($names);
+                $usercontroll->creeusers($names);
               
 
             unset($_POST);
              
             }
         ?>
-    <section class = "border-black border-solid border-2 bg-red-500 w-full flex">
-        <div class = "border-black border-solid border-2 bg-green-500 w-1/3">
+    <section class = "border-black border-solid border-2 bg-blue-500 w-full flex">
+        <div class = "border-black border-solid border-2 bg-blue-500 w-1/3">
             <h1>Cours</h1>
         </div>
-        <div class = "border-black border-solid border-2 bg-orange-500 w-full px-6 py-2">
+        <div class = "border-black border-solid border-2 bg-cyan-500 w-full px-6 py-2">
            
             <div class="flex justify-between pr-4">
                <h1 class = "text-center py-1">Utilisateurs</h1>
@@ -131,6 +131,6 @@
             
         </div>
     </section>
-    <script src = "../Assests/src/admin.js"></script>
+    <script src = "../Assets/src/admin.js"></script>
 </body>
 </html>

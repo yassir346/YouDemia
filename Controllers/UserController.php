@@ -15,7 +15,7 @@
        $this->user->findusers('utilisateur', $finder);
     }
 
-    public function Cree($names)
+    public function creeusers($names)
     {
        $this->user->creeusers('utilisateur', $names);
     }

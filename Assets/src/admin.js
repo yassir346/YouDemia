@@ -10,9 +10,9 @@ ajouterBtnUtilisateur.addEventListener("click", function(){
 });
 
 
-// ajouterBtnForm.addEventListener("click", function(){
-//     formPopup.style = 'display: none;';
-// });
+ajouterBtnForm.addEventListener("click", function(){
+    formPopup.style = 'display: none;';
+});
 
 annulerBtnForm.addEventListener("click", function(){
     formPopup.style = 'display: none;';
