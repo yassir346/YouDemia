@@ -1,5 +1,6 @@
 <?php
     include ("../Models/Utilisateur.php");
+
    class UserController
    {
     private Utilisateur $user;
@@ -9,11 +10,20 @@
         $this->user = new Utilisateur();
     }
 
-    public function Users()
+    public function Users($finder)
     {
-       $users=  $this->user->findusers('roles');
-        var_dump($users);
+       $this->user->findusers('utilisateur', $finder);
     }
 
+    public function Cree($names)
+    {
+       $this->user->creeusers('utilisateur', $names);
+    }
+
+    public function Delete($id)
+    {
+        $this->user->deleteusers('utilisateur', $id);
+    }
+       
    }
 ?>
